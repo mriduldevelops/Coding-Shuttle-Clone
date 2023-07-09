@@ -1,38 +1,688 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@500&family=Noto+Serif&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  background-color: #fbfbfb;
+  width: 100%;
+}
+.panel{
+  font-weight: 600;
+  padding: 8px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #7209b7;
+}
+
+.nav-items{
+  padding: 0 138px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.logo img{
+  margin-top: 9px;
+  margin-right: 35px;
+  height: 33px;
+}
+.links{
+  margin-top: 14px;
+  margin-right: 365px;
+  width: 60%;
+  
+}
+
+nav ul li {
+  margin-right: 10px;
+  display: inline;
+  text-decoration: none;
+}
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: #ed155a;
+}
+
+nav button{
+  margin-top: 9px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.enroll button{
+  height: 36px;
+  border: none;
+  background-color: #7209b7;
+  color: #fff;
+  width: 110px;
+  margin-right: 27px;
+ 
+}
+
+.login button{
+  height: 39px;
+  border: 3px solid #777777;
+  padding: 0 8px;
+  color: #777777;
+  background-color: #fff;
+  width: 200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login img{
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+}
+.hidden{
+  display: none;
+}
+.container{
+  padding: 0 138px;
+  
+}
+.hero-section{
+  margin: 120px 0 70px;
+  display: grid;
+  background-image: url(./component/images/blugBg.svg);
+  background-position: center;  
+  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.hero-section-left{
+  flex-basis: 50%;
+  margin-top: 70px;
+}
+.hero-section-right{
+  flex-basis: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-section-right img{
+  width: 100%;
+  height: 100%;
+}
+#div1{
+  width: 500px;
+}
+#div1 h1{
+  font-size: 55px;
+  font-weight: 700;
+}
+#div2{
+  width: 329px;
+}
+#div2 p{
+  margin: 16px 0 16px;
+  line-height: 2rem;
+  color: #484848;
+  font-size: 20px;
+}
+.hero-section-left button{
+  height: 45px;
+  width: 175px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #7209b7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#div3{
   display: flex;
+  align-items: center;
+  text-align: center;
+  width: 480px;
+  height: 90px;
+  border-radius: 10px;
+  margin-top: 24px;
+
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, #7209b7, #ed155a) border-box;
+  border: 3px solid transparent;
+}
+
+#div3 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  border-right: 1px solid #777777;
+  height: 60px;
+}
+#div3 p{
+  font-size: 16px;
+}
+#div3 p span{
+  font-size: 20px;
+  padding: auto;
+  color: #212121;
+  font-weight: 700;
+}
+
+.assurance{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #484848;
+  background-color: #fafbfc;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin: 0 138px;  
+}
+
+.section-heading{
+  margin: 80px 136px; 
+  text-align: center;
+}
+
+.section-heading h5{
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.section-heading h1{
+  
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  line-height: 4rem;
+}
+
+
+.cards{
+  position: relative;
+  z-index: -1;
+  margin: 58px 138px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: evenly;
+  grid-auto-rows: auto;
+  gap: 26px;
+  height: auto;
+}
+.card{
+  flex-basis: 30%;
+  height: auto;
+  padding: 50px 33px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.card img{
+  width: 45px;
+  height: 45px;
+  margin-bottom: 2.1rem;
+}
+.card h5{
+  letter-spacing: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #212121;
+  margin-bottom: 1.3rem;
+}
+.card p{
+  font-size: 18px;
+  color: #484848;
+  letter-spacing: .1px;
+  line-height: 1.7rem;
+}
+
+.companies-section{
+  background-color: #f7f79e1a;
+  background-image: url(./component/images/lightbg.PNG);
+  padding: .5rem 0;
+}
+
+.companies{
+  display: grid;
+  margin: 54px 138px 32px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.companies img{
+  height: 36px;
+}
+
+.companies h3{
+  font-size: 22px;
+}
+
+.success-cards{
+  margin: 48px 138px ;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.s-card{
+  width: 420px;
+  border: 1px solid #afafaf;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.s-card .top{
+  line-height: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-bottom: 16px;
+}
+.s-card .img img{
+  margin-right: 20px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.s-card .info img{ 
+  height: 20px;
+}
+
+.s-card .info h5{
+  font-size: 1.3rem; 
+  font-weight: 500; 
+}
+
+.s-card .in img{
+  margin: 8px 20px 0 50px;
+  height: 26px;
+  width: 26px;
+}
+.s-card .info p{
+  color: #484848;
+}
+.s-card .bottom{
+  color: #484848;
+  font-size: 18px;
+}
+
+.curriculum .content{
+  margin: 55px 138px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 34px;
+}
+.curriculum .content .left{
+  height: 770px;
+  width: 100% ;
+  overflow-y: scroll;
+}
+.curriculum .content .left::-webkit-scrollbar{
+  display: none;
+}
+.program-card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.program-card img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.program-card .pricing{
+  padding: 0 32px 32px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.program-card .pricing div{
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+.program-card .pricing h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.program-card .pricing h1 span{
+  font-size: 40px;
+  color: #757575;
+}
+.program-card .pricing h4{
+  font-weight: 700;
+  color: #b7b7b7;
+}
+.program-card .pricing p{
+  font-size: 18px;
+  color: #484848;
+}
+
+.program-card .pricing button{
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fafbfc;
+  background-color: #006d77;
+  border: none;
+  border-radius: 8px;
+}
+
+.feature{
+  line-height: 2.3rem;
+  padding: 32px;
+}
+.feature ul li{
+  list-style-image: url(./component/images/asset79.svg);
+  font-size: 18px;
+  color: #484848;
+  display: flex;
+  text-align: left;
+}
+
+.feature ul li img{
+  height: 30px;
+  fill: #006d77;
+}
+
+.feature ul li img span{
+  display: inline;
+}
+
+.accordian{
+  border: 2px solid #cbfbff;
+  border-radius: 10px;
+  background-color: #F1FEFF;
+  padding: 17px 12px;
+  padding-bottom: 0; 
+  margin: 23px 0; 
+}
+.accordian .head{
+  display: flex;
+  height: 86px;
+  align-items: center;
+}
+.accordian .head .left{
+  height: 40px;
+  width: 40px;
+  background-color: #006d77;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+}
+.accordian .head .right{
+  width: 88%;
+  line-height: 2rem;
+}
+.accordian .head .right h3{
+  font-size: 1.4rem;
+  color: #212121;
+  font-weight: 500;
+}
+.accordian .head .right h5{
+  color: #575656;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.accordian .head .circle{
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.certificate-section{
+  background-image: url(./component/images/darkbg.PNG);
+  padding: 96px 138px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.certificate-section .left{
+  padding-right: 102px;
+  
+}
+.certificate-section .left h1{
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 42px;
+  color: #fff;
+  line-height: 4.4rem;
+}
+.certificate-section .left h4{
+  margin-top: 16px;
+  line-height: 2.2rem;
+  color: #c2c2c2;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 400px;
+}
+.certificate-tag {
+  align-items: center;
+  padding: 5px 12px 5px;
+  border-radius: 7px;
+  background-color: #fce7b5;
+  width: 320px;
+  height: 40px;
+  
+}
+.certificate-tag h5{
+  font-size: 19px;
+  font-weight: 600;
+  color: #753b18;
+}
+.certificate-section .right{
+  background-image: url(./component/images/asset\ 32.png);
+  background-size: 100%;
+}
+.certificate-section .right img{
+  height:120px;
+  margin: 265px 245px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.founder-section .body{
+  margin: 0 138px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 104px;
 }
+.founder-section .body .left{
+  display: flex;
+  justify-content: center;
+}
+.founder-section .body .left img{
+  height: 694px;
+}
+.founder-section .body .right p span{
+  background-color: #04a777;
+  color: #fff;
+}
+.founder-section .body .right p{
+  color: #484848;
+  font-size: 20px;
+  line-height: 33px;
+}
+.founder-section .body .right .experience img{
+  height: 33px;
+}
+.founder-section .body .right .experience h5{
+  font-weight: 700;
+  font-size: 22px;
+  color: #04a777;
+  margin-right: 40px;
+}
+.founder-section .body .right .experience{
+  display: flex;
+  margin-top: 26px;
+}
+
+.faq-section .body{
+  margin: 0 138px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 24px;
+}
+.faq-section .body .box{
+  width: 98%;  
+}
+.faq-accordian{
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #eef6ff;
+  color: #555656;
+  padding: 20px 20px;
+  font-size: 22px;
+}
+.faq-accordian .body{
+  display: inline;
+}
+
+.discord-card{
+  background-color: #2b2f34;
+  margin: 48px 138px;
+  border-radius: 20px;
+  padding: 67px 0 67px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.discord-card button img{
+  height: 26px;
+  margin-right: 10px;
+}
+.discord-card button{
+  background-color: #8165ff;
+  border: none;
+  border-radius: 30px;
+  width: 210px;
+  height: 53px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discord-card button p{
+  font-size: 19px;
+  color: #fff;
+  font-weight: 500;
+}
+.discord-card .left{
+  width: 51%;
+}
+.discord-card .left h1{
+  color: #fff;
+  line-height: 3.7rem;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.discord-card .left h5{
+  margin-top: 1.7rem;
+  color: #d5d5d6;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-right: 138px;
+  margin-bottom: 32px;
+}
+.discord-card .right{
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.discord-card .right img{
+  width: 100%;
+}
+
+
+.footer {
+  margin-top: 80px;
+  padding: 33px 138px;
+  background-color: #030138;
+}
+.footer .top{ 
+  margin: 63px 163px;
+  padding: 0 50px;
+  color: #fff;
+}
+.footer h1{
+  font-size: 48px;
+  font-weight: 700;
+}
+.footer button{
+  color: #fff;
+  background-color: #ed155a;
+  height: 54px;
+  width: 312px;
+  margin: 32px 0 100px;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+.footer .bottom{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #848394;
+  gap: 289px; 
+}
+.footer .bottom .left-section h6{
+  margin: 20px 0 124px;
+  color: #fff;
+}
+.footer .bottom h5{
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer .bottom .mid-section li:hover{
+  color: #ed155a;
+  text-decoration: underline 2px solid #ed155a;
+}
+.footer .bottom .mid-section li{
+  list-style-type: none;
+  line-height: 1.7rem;
+  font-weight: 600;
+  
+}
+.footer .bottom .social-media{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 8px;
+}
+.footer .bottom .social-media div img{
+  margin: 8px;
+} 
+.footer .bottom .right-section{
+  width: 214px;
+}
+.footer .bottom p{
+  font-weight: 500;
+}
+ .copyright{
+  color: #848394;
+ } 

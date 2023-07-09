@@ -1,0 +1,181 @@
+@media screen and (max-width: 992px){
+    nav .links, nav button{
+        display: none;
+    } 
+    .nav-items{
+        padding: 0 34px;
+        justify-content: space-between;
+    }
+    .hidden{
+        display: block;
+    }
+    .menu-icon{
+        padding: 4px;
+    }
+    .toggled-nav{
+        padding: 16px;
+        height: 245px;
+        width: 100%;
+        
+    }
+    .toggled-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .toggled-nav ul li{
+        margin: 8px;
+        line-height: 31px;
+    }
+    .container{
+        padding: 0 34px;
+
+    }
+    .hero-section{
+        margin: 32px;
+        margin-bottom: 48px;
+        grid-template-columns: 1fr;
+        background-size: 96%;        
+    }
+    .hero-section-left{
+        text-align: center;   
+    }
+    #div1{
+        margin: auto;
+        width: 100%;
+    }
+    #div1 h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    #div2{
+        margin: auto;
+        width: 70%;
+        text-align: center;       
+    }
+    #div3{
+        margin: auto;
+    }
+    .assurance{
+        margin: 42px;
+    }
+    .section-heading{
+        margin: 80px 34px 48px;
+    }
+    .section-heading h1{
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 34px 80px;   
+    }
+    .card img{
+        margin-bottom: 1.7rem;
+    }
+    .card h5{
+        margin-bottom: .9rem;
+    }
+    .companies{
+        margin: 32px 34px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 48px;
+    }
+    .curriculum .content{
+        margin: 0 34px;
+        grid-template-columns: 1fr;
+    }
+    .program-card{
+        margin-bottom: 130px;
+    }
+    .program-card .pricing div{
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .certificate-section{
+        justify-content: center;
+        grid-template-columns: 1fr;
+        padding: 80px 34px;
+    }
+    .certificate-section .right{
+        width: 415px;
+        height: 290px;
+        margin: auto;
+    }
+    .certificate-section .right img{
+        height: 80px;
+        margin: 24vh;
+    }
+    .certificate-section .left{
+        padding-right: 0px;
+    }
+    .certificate-section .left h1{
+        font-size: 2.1rem;
+        line-height: 3.2rem;
+    }
+    .certificate-section .left h4{
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        width: 500px;
+        margin-bottom: 31px;
+    }
+    .founder-section .body{
+        margin: 0 34px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .founder-section .body .right{
+        width: 100%;
+    }
+    .founder-section .body .right .experience img{
+        height: 23px;
+    }
+    .founder-section .body .right .experience h5{
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .faq-section .body{
+        margin: 0 34px;
+        grid-template-columns: 1fr;
+    }
+    .discord-card{
+        margin: 80px 34px;
+        padding: 30px;
+        display: flex;
+    }
+    .discord-card .right{
+        display: none;
+    }
+    .discord-card .left{
+        width: 100%;
+    }
+    .discord-card .left h1{
+        font-size: 25px;
+        text-align: center;
+        line-height: 2.6rem;
+    }
+    .discord-card .left h5{
+        margin: 16px 0 32px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.6rem;
+    }
+    .discord-card button{
+        margin: 0 180px;
+    }
+    .footer {
+        padding:33px 34px;
+    }
+    .footer .top{
+        margin: 53px 34px;
+    }
+    .footer h1{
+        font-size: 2.1rem;
+    }
+    .footer button{
+        width: 211px;
+    }
+    .footer .bottom{
+        gap: 52px;
+    }
+}
